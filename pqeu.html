@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+    <link rel="icon" href="">
+    <div class="preloader" id="preloader">
+
+
+    <div class="bubbles-wrapper">
+      <div class="bubbles" id="b1">&nbsp</div>
+      <div class="bubbles" id="b2">&nbsp</div>
+      <div class="bubbles" id="b3">&nbsp</div>
+      <div class="bubbles" id="b4">&nbsp</div>
+      <div class="bubbles" id="b5">&nbsp</div>
+    </div></div>
+    <title>Cah - PQ EU?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+   <section class="gif">
+
+
+     <div class="paginas">
+
+       <div class="right22">
+      <img class="ab1" src="abacate-grande.gif" alt="">
+       </div>
+
+       <div class="right2">
+<img class="ab2" src="abacate-pequeno.gif" alt="">
+       </div>
+       <div class="left22">
+      <img class="ab3" src="abacate-grande.gif" alt="">
+       </div>
+
+       <div class="left2">
+<img class="ab4" src="abacate-pequeno.gif" alt="">
+       </div>
+
+
+       <div class="titulo1">
+         <p class="stretch">PQ EU?</p>
+
+       </div>
+       <div class="voltar">
+         <a href="index.html">VOLTAR</a>
+       </div>
+       <div class="pt11">
+
+
+<p>Eu sou uma pessoa que sempre buscar melhorar, sou extremamente exigente com o meu trabalho e sei que com as instruções certas sou capaz de grandes coisas. Eu dou 100% de mim em tudo que eu faço, seja um bolo de banana ou o job que vou colocar no meu portfólio, pode até dar errado, mas não vai ser por falta de esforço e tentativas. Eu não cai em publicidade por acaso, como eu sei que acontece com muita gente, eu estou nesse caminho por que escolhi e é o que quero fazer e estou ciente dos desafios que encontrarei no caminho e acredito que estou pronta pra encara-los.</p>
+
+     </div>
+  <div class="twogif">
+
+  <img src="gifs/2_1.gif" class="gif2_1" alt=""> <img src="gifs/2_2.gif" class="gif2_1" alt="">  </div>
+     <div class="pt11">
+
+
+<p>Além disso, vocês não estariam contratando somente uma estagiária de direção de arte, mas também uma bailarina com Phd em estudo de drag queens, eleita a maior colecionadora de fotos de animais em 2017, com prêmio de primeiro lugar em melhor bolo de banana de SP, e que sempre leva bolo de banana pros colegas de trabalho experimentarem (; #ficadica</p>
+
+   </div>
+
+  </div>
+   </section>
+   <script
+     src="http://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+    /*
+     * ... all of your jQuery ...
+     */
+
+    // At the bottom of your jQuery code, put this:
+    $('#preloader').fadeOut();
+});
+$.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+
+    elmt.html(one_line);
+    txt_width = one_line.width();
+
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ;
+
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+</script>
+
+</body>
+</html>

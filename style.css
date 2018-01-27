@@ -1,0 +1,521 @@
+body {
+
+    height: 100vh;
+    overflow:hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.website {
+    background-image: url(fundo.png);
+    height:100vh;
+    background-size: cover;
+}
+
+.voltar {
+  position: absolute;
+  font-size: 80px;
+  width: 100%;
+  color: #fff;
+  bottom:-100px;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 20px;
+
+}
+.gif {
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+.bola {
+
+    height:80vh;
+    position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top:10vh;
+
+}
+.content {
+    color: #ffff;
+
+
+        height:80vh;
+    position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top:30vh;
+    width: 60vh;
+    font-size: 3vh;
+    z-index: 6;
+}
+.esquerda {
+    text-align: right;
+}
+.bt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 3vh;
+    right:0px;
+    border-bottom: 1px solid white;
+    margin-top:3vh;
+}
+
+.l1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    height:90vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    width:95%;
+    z-index: 10;
+    margin-top:5vh;
+      left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    text-align: center;
+    padding:15vh;
+    display: none;
+}
+.l1 hr {
+    width: 60%;
+}
+
+.hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    float:right;
+}
+.stretch{
+    overflow-x:hidden;
+}
+.stretch_it{
+    white-space: nowrap;
+
+}
+.titulo1 {
+  position: absolute;
+  font-size: 80px;
+  width: 100%;
+  color: #fff;
+  top:-110px;
+  font-weight: 200;
+}
+a { color: white;}
+a:hover { color: white; text-decoration: none;}
+#outer-orbit {
+    z-index: 5;
+        position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top:17vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68vh;
+  height: 68vh;
+
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+#outer-orbit2 {
+    z-index: 4;
+        position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top:17vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68vh;
+  height: 68vh;
+
+  border-radius: 100%;
+
+     transform: rotate(270deg);
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-cirlces {
+ height: 10vh;
+    width: auto;
+    z-index: 6;
+}
+
+.outer-orbit-cirlces2 {
+        z-index: 5;
+ height: 12vh;
+    width: auto;
+}
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.paginas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: auto;
+
+  width: 50vw;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+  border-radius: 20px;
+  padding: 20px;
+  text-align: justify;
+  font-size:12px;
+}
+p {padding:10px;
+text-align: justify;
+margin-bottom:0px;}
+.left1 {
+  position: absolute;
+  width: 25vw;
+  height: 100%;
+  background-image:url("img/unicornio-esquerda.png");
+  background-size: cover;
+}
+.right1 {
+  position: absolute;
+  width: 25vw;
+  margin-left: 75vw;
+  height: 100%;
+  background-image:url("img/unicornio-direita.png");
+  background-size: cover;
+}
+.right22 {
+  position: absolute;
+  right:-250px;
+
+}
+.right2 {
+  position: absolute;
+  right:-200px;
+top:350px;
+}
+.left22 {
+  position: absolute;
+  left:-120px;
+
+}
+.left4 {
+  position: absolute;
+  width: 25vw;
+  height: 100%;
+  background-image:url("img/GATINHO.png");
+  background-size: cover;
+}
+.left7 {
+  position: absolute;
+  width: 150px;
+  bottom:0px;
+z-index: 10;
+  background-size: cover;
+}
+.pinguim {
+  width: 400px;
+}
+.right4 {
+  position: absolute;
+  width: 25vw;
+  margin-left: 75vw;
+
+  height: 100%;
+  background-image:url("img/gatinho.png");
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+.left5 {
+  position: absolute;
+  width: 25vw;
+  height: 100%;
+  background-image:url("img/pizza.gif");
+  background-size: cover;
+}
+.right5 {
+  position: absolute;
+  width: 25vw;
+  margin-left: 75vw;
+  height: 100%;
+  background-image:url("img/pizza.gif");
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+.left6 {
+  position: absolute;
+  width: 25vw;
+  height: 100%;
+  background-image:url("img/ALPACA-1.gif");
+  background-size: cover;
+}
+.right6 {
+  position: absolute;
+  width: 25vw;
+  margin-left: 75vw;
+  height: 100%;
+  background-image:url("img/ALPACA-2.gif");
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+.bottom1 {
+  position:absolute;
+  bottom:80px;
+  width: 100%;
+  height:100px;
+  text-align: center;
+}
+.bottom1 img {
+  width:1000px;
+}
+.left2 {
+  position: absolute;
+  left:-250px;
+top:200px;
+}
+.ab1 {
+  width: 15vw;
+  height: auto;
+}
+.ab4 {
+  width: 15vw;
+  height: auto;
+  -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+.ab2 {
+  width: 5vw;
+  height: auto;
+
+}
+.ab3 {
+  width: 5vw;
+  height: auto;
+  -moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+}
+.pt11 {
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+}
+.pt12 {
+  display: flex;
+  align-items: center;
+   justify-content:flex-start;
+}
+.pt51 {
+width: 100%;
+clear: both;
+}
+.pt61 {
+display: flex;
+flex-direction: column;
+
+width: 100%;
+clear: both;
+}
+.gif5_1 {
+
+height: 200px;
+  width: 48%;
+  float: right;
+  margin:0 5px 0px 20px;
+}
+.gif6_1 {
+
+ align-self: flex-end;
+  width: 30%;
+  float: right;
+  margin:0 5px 0px 20px;
+margin-top: auto;
+
+}
+.gif6_2 {
+
+
+  width: 48%;
+  float:left;
+  margin:20px 5px 0px 20px;
+
+}
+.gif1_1 {
+
+  padding:0px;
+  width: 50%;
+}
+.gif1_2 {
+
+  margin-right:10px;
+  width: 50%;
+}
+
+.twogif {
+display: inline-flex;
+justify-content: space-between;
+}
+.threegif {
+display: inline-flex;
+justify-content: space-between;
+}
+.gif2_1 {
+
+height: 200px;;
+  width: 48%;
+}
+.gif5_3 {
+
+height: 200px;;
+  width: 33.3333%;
+}
+/* preloador */
+
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9;
+}
+
+.bubbles-wrapper {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1;
+}
+.bubbles {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 100%;
+    -webkit-animation-name: up-down;
+            animation-name: up-down;
+    -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+    -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+            animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+#b1 {
+    background-color: #8861A4;
+}
+#b2 {
+    background-color: #2495C1;
+    -webkit-animation-delay: 100ms;
+            animation-delay: 100ms;
+}
+#b3 {
+    background-color: #48BB6D;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+}
+#b4 {
+    background-color: #F1C500;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+}
+#b5 {
+    background-color: #F35957;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+}
+@-webkit-keyframes up-down {
+    0% {-webkit-transform: translateY(-50%) scale(0.2);transform: translateY(-50%) scale(0.2);}
+    50% {-webkit-transform: translateY(50%) scale(1.2);transform: translateY(50%) scale(1.2);}
+    100% {-webkit-transform: translateY(-50%) scale(0.2);transform: translateY(-50%) scale(0.2);}
+}
+@keyframes up-down {
+    0% {-webkit-transform: translateY(-50%) scale(0.2);transform: translateY(-50%) scale(0.2);}
+    50% {-webkit-transform: translateY(50%) scale(1.2);transform: translateY(50%) scale(1.2);}
+    100% {-webkit-transform: translateY(-50%) scale(0.2);transform: translateY(-50%) scale(0.2);}
+}
+@media (max-width:1400px){
+.stretch_it {
+
+    font-size: 32px;
+
+  }
+  .voltar {
+
+      font-size: 32px;
+      bottom:-50px;
+
+    }
+}
