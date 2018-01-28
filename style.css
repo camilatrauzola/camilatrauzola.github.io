@@ -198,6 +198,15 @@ a:hover { color: white; text-decoration: none;}
     transform: rotate(360deg);
   }
 }
+.gif4_1 {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.gif4_1 img {
+  margin-bottom:-50px;
+
+}
 .paginas {
   display: flex;
   flex-direction: column;
@@ -211,7 +220,7 @@ a:hover { color: white; text-decoration: none;}
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
- max-height: 80vh;
+ max-height: 85vh;
   border-radius: 20px;
   padding: 20px;
   text-align: justify;
