@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+    <link rel="icon" href="">
+    <div class="preloader" id="preloader">
+
+
+    <div class="bubbles-wrapper">
+      <div class="bubbles" id="b1">&nbsp</div>
+      <div class="bubbles" id="b2">&nbsp</div>
+      <div class="bubbles" id="b3">&nbsp</div>
+      <div class="bubbles" id="b4">&nbsp</div>
+      <div class="bubbles" id="b5">&nbsp</div>
+    </div></div>
+    <title>Cah - HELLO IT'S ME</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+   <section class="gif">
+     <div class="right1">
+
+     </div>
+     <div class="left1">
+
+     </div>
+
+     <div class="paginas">
+       <div class="titulo1">
+         <p class="stretch">HELLO IT'S ME</p>
+
+       </div>
+       <div class="voltar">
+         <a href="index.html">VOLTAR</a>
+       </div>
+       <div class="pt11">
+
+
+<p>Olá, tudo bom? Comigo também! Meu nome é <b>Camila Trauzola</b>, eu tenho 20 anos, sou de escorpião com ascendente em sagitário, isso já diz tudo não é mesmo?…não? okay, vou tentar de novo…
+Tenho 1,63 de altura e 49 kg, então pode-se dizer que sou uma pessoa pequena com sonhos gigantes, e um deles é ser bem sucedida profissionalmente, para mim isso significa fazer o que eu amo, dando o meu melhor e se possível conseguir ajudar as pessoas no meio do caminho.
+Antes que esse texto comece a ficar muito sério veja o gif a direita para descontrair.</p>
+<img src="gifs/1_1.gif" class="gif1_1" alt="">
+     </div>
+<p>Outra coisa que vocês deveriam saber sobre mim é que segundo o resultado do último teste que eu fiz no Buzzfeed, minha melhor qualidade é a tenacidade, minha cor favorita é preto e se eu fosse uma spicy girl seria a Mel B. </p>
+
+
+<div class="pt12">
+
+
+
+<img src="gifs/1_2.gif" class="gif1_2" alt="">
+
+<p>   Agora vamos para um bate-bola, jogo rápido:<br><br>
+<b>um medo: </b>cobras<br>
+<b>um filme:</b> assassinato no expresso do oriente<br>
+<b>um livro:</b> pequeno principe<br>
+<b>uma serie:</b> friends<br>
+<b>uma felicidade:</b> chocolate<br>
+<b>um beatle:</b> George<br>
+<b>um pokemon:</b> squirtle<br>
+<b>uma drag queen:</b> detox<br>
+<b>uma rede social:</b> instagram<br>
+<b>uma música:</b> total eclipse of the heart</p>
+</div>  </div>
+   </section>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+    /*
+     * ... all of your jQuery ...
+     */
+
+    // At the bottom of your jQuery code, put this:
+    $('#preloader').fadeOut();
+});
+$.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+
+    elmt.html(one_line);
+    txt_width = one_line.width();
+
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ;
+
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+</script>
+
+</body>
+</html>

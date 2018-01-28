@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+    <link rel="icon" href="">
+    <div class="preloader" id="preloader">
+
+
+    <div class="bubbles-wrapper">
+      <div class="bubbles" id="b1">&nbsp</div>
+      <div class="bubbles" id="b2">&nbsp</div>
+      <div class="bubbles" id="b3">&nbsp</div>
+      <div class="bubbles" id="b4">&nbsp</div>
+      <div class="bubbles" id="b5">&nbsp</div>
+    </div></div>
+    <title>Cah - HORA DE MOFAR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+   <section class="gif">
+     <div class="right6">
+
+     </div>
+     <div class="left6">
+
+     </div>
+
+     <div class="paginas">
+       <div class="titulo1">
+         <p class="stretch">HORA DE MOFAR</p>
+
+       </div>
+       <div class="voltar">
+         <a href="index.html">VOLTAR</a>
+       </div>
+       <div class="pt61">
+
+
+<p><img src="gifs/6_1.gif" class="gif6_1" alt="">Quando eu tenho um tempo livre além de ficar no netflix mofando, que acho q isso é um hobbie que todo mundo tem hoje em dia, eu gosto de:
+dançar ballet, eu fiz ballet clássico por 4 anos, mas como comecei a trabalhar e fazer faculdade tive que para com as aulas, mas eu continuo praticando em casa sempre que posso.
+Eu sou uma pessoa que curte qualquer tipo de role, porque para mim o importante é a companhia e não o lugar, mas eu geralmente tento variar no que fazer, ir no parque, museus, show, bares, festas, stand ups, andar na paulista de domingo, ir em restaurantes experimentar comidas diferentes, ir no shopping… Eu gosto também de colecionar coisas, atualmente cultivo coleções de:
+CDs: eu amo música, mas amo especialmente ouvir músicas em CDs no rádio do carro e gosto particularmente do folhetinho que vem dentro da caixa do CD com as fotinhos da banda e a letra das músicas
+Selfies com dogies: Como eu gosto incrivelmente muito de animais, tenho uma meta de tirar uma selfie com todos os cachorros q eu conhecer e coleciona-las (até os que estão passando na rua).<img src="gifs/6_2.gif" class="gif6_2" alt=""></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+  </div>
+   </section>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+    /*
+     * ... all of your jQuery ...
+     */
+
+    // At the bottom of your jQuery code, put this:
+    $('#preloader').fadeOut();
+});
+$.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+
+    elmt.html(one_line);
+    txt_width = one_line.width();
+
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ;
+
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400" rel="stylesheet">
+    <link rel="icon" href="">
+    <div class="preloader" id="preloader">
+
+
+    <div class="bubbles-wrapper">
+      <div class="bubbles" id="b1">&nbsp</div>
+      <div class="bubbles" id="b2">&nbsp</div>
+      <div class="bubbles" id="b3">&nbsp</div>
+      <div class="bubbles" id="b4">&nbsp</div>
+      <div class="bubbles" id="b5">&nbsp</div>
+    </div></div>
+    <title>Cah - PQ W+K?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+   <section class="gif">
+     <div class="bottom1">
+<img src="cactus.gif" alt="">
+     </div>
+
+
+     <div class="paginas">
+       <div class="titulo1">
+         <p class="stretch">PQ W+K?</p>
+
+       </div>
+       <div class="voltar">
+         <a href="index.html">VOLTAR</a>
+       </div>
+       <div class="pt11">
+
+
+<p>Existem milhões de motivos para alguém querer entrar na W+K, o fato de ser uma agência global com 8 escritórios pelo mundo, ter contas de grandes clientes, ser premiada em festivais internacionais e estar entre as 50 maiores agências do Brasil. E claro que todos esses motivos são importantes, mas não são os meus. </p>
+
+     </div>
+
+
+<div class="pt11">
+  <p>No fim do ano passado eu marquei encontros com diretores de arte de diversas agências, para  poder receber um feedback sobre meu trabalho e também conhecer melhor as agências. Tive experiências boas, interessantes e algumas sem dúvida marcantes, e ai que começam os meus motivos para querer a W+K. Desde o momento que entrei na agência já senti como se pertencesse, o ambiente não me pareceu estressante e sim muito amigável e a conversa com o diretor de arte foi completamente construtiva e atenciosa. Ele ofereceu ajuda e deu ótimas dicas, além de realmente parecer interessado e separar tempo da agenda dele,</p>
+
+
+
+<img src="gifs/3_1.gif" class="gif1_2" alt="">
+
+</div>
+<p>que geralmente em agências é bem corrido, para me instruir. Para mim é nesse tipo de lugar, com esse tipo de pessoas que preciso trabalhar, que me ajudem a crescer, me ensinem e guiem para poder me tornar a profissional que sonho em ser.
+</p>
+ </div>
+   </section>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+    /*
+     * ... all of your jQuery ...
+     */
+
+    // At the bottom of your jQuery code, put this:
+    $('#preloader').fadeOut();
+});
+$.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+
+    elmt.html(one_line);
+    txt_width = one_line.width();
+
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ;
+
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+</script>
+
+</body>
+</html>
