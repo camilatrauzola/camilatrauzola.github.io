@@ -1,7 +1,7 @@
 body {
 
 
-
+overflow: hidden;
     font-family: 'Roboto', sans-serif;
 }
 .website {
@@ -29,34 +29,22 @@ height:100vh;
   top: 0;
   bottom: 0;
   position: absolute;
-background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-background-size: 1800% 1800%;
 
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
+    background: linear-gradient(120deg, #b94388, #ce4d69, #e75b42 , #f5761d, #ceb420, #bad327);
+    background-size: 1200% 1200%;
+    -webkit-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+  }
+  @-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
 .bola {
 
     height:80vh;
@@ -205,7 +193,7 @@ a:hover { color: white; text-decoration: none;}
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   height: auto;
 
   width: 50vw;
@@ -219,13 +207,16 @@ a:hover { color: white; text-decoration: none;}
   padding: 20px;
   text-align: justify;
   font-size:12px;
+  justify-content: space-between;
 }
 p {padding:10px;
 text-align: justify;
+
 margin-bottom:0px;}
 .left1 {
   position: absolute;
   width: 25vw;
+  margin-left: -3vw;
   height: 100%;
   background-image:url("img/unicornio-esquerda.png");
   background-size: cover;
@@ -257,6 +248,7 @@ top:350px;
   position: absolute;
   width: 25vw;
   height: 100%;
+  margin-left: -5vw;
   background-image:url("img/Gatinho.png");
   background-size: cover;
 }
@@ -273,7 +265,7 @@ z-index: 10;
 .right4 {
   position: absolute;
   width: 25vw;
-  margin-left: 75vw;
+  margin-left: 80vw;
 
   height: 100%;
   background-image:url("img/Gatinho.png");
@@ -287,13 +279,15 @@ z-index: 10;
   position: absolute;
   width: 25vw;
   height: 100%;
+  margin-left: -5vw;
   background-image:url("img/pizza.gif");
   background-size: cover;
 }
 .right5 {
   position: absolute;
   width: 25vw;
-  margin-left: 75vw;
+  margin-left: 80vw;
+
   height: 100%;
   background-image:url("img/pizza.gif");
   background-size: cover;
@@ -306,16 +300,19 @@ z-index: 10;
   position: absolute;
   width: 25vw;
   height: 100%;
+  margin-left: 2vw;
   background-image:url("img/Alpaca-1.gif");
-  background-size: cover;
+  background-size: contain;
+  background-repeat:no-repeat;
 }
 .right6 {
   position: absolute;
   width: 25vw;
-  margin-left: 75vw;
+  margin-left: 73vw;
   height: 100%;
-  background-image:url("img/alpaca-1.gif");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url("img/alpaca-2.gif");
+  background-size: contain;
   -moz-transform: scaleX(-1);
    -o-transform: scaleX(-1);
    -webkit-transform: scaleX(-1);
@@ -337,11 +334,11 @@ z-index: 10;
 top:200px;
 }
 .ab1 {
-  width: 15vw;
+  width: 13vw;
   height: auto;
 }
 .ab4 {
-  width: 15vw;
+  width: auto;
   height: auto;
   -moz-transform: scaleX(-1);
    -o-transform: scaleX(-1);
@@ -353,6 +350,7 @@ top:200px;
   height: auto;
 
 }
+img { padding:10px;}
 .ab3 {
   width: 5vw;
   height: auto;
@@ -362,14 +360,16 @@ top:200px;
      transform: scaleX(-1);
 }
 .pt11 {
+    width: 100%;
   display: flex;
   align-items: center;
    justify-content: space-between;
 }
 .pt12 {
+  width: 100%;
   display: flex;
   align-items: center;
-   justify-content:flex-start;
+  justify-content:flex-start;
 }
 .pt51 {
 width: 100%;
@@ -377,8 +377,8 @@ clear: both;
 }
 .pt61 {
 display: flex;
-flex-direction: column;
 
+height: 100%;
 width: 100%;
 clear: both;
 }
@@ -387,23 +387,26 @@ clear: both;
 height: 200px;
   width: 48%;
   float: right;
-  margin:0 5px 0px 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: -10px;
 }
 .gif6_1 {
 
  align-self: flex-end;
-  width: 30%;
+  width: 300px;
+
   float: right;
-  margin:0 5px 0px 20px;
-margin-top: auto;
+
 
 }
 .gif6_2 {
 
 
-  width: 48%;
-  float:left;
-  margin:20px 5px 0px 20px;
+  width: 410px;
+
+  margin:20px 5px 0px -10px;
+  align-self: flex-end;
 
 }
 .gif1_1 {
@@ -414,7 +417,8 @@ margin-top: auto;
 .gif1_2 {
 
   margin-right:10px;
-  width: 50%;
+  width: 300px;
+
 }
 
 .twogif {
@@ -428,12 +432,33 @@ justify-content: space-between;
 .gif2_1 {
 
 height: 200px;;
-  width: 48%;
+  width: 370px
 }
-.gif5_3 {
+.gif5_31 {
 
-height: 200px;;
-  width: 33.3333%;
+margin:0px;
+  width: 40%;
+  height: 200px;
+}
+.gif5_32 {
+margin:0px;
+
+  width: 30%;
+
+    height: 200px;
+}
+.ciente {
+  text-align: right;
+  width: 100%;
+  padding: 0;
+  padding-right: 10px;
+}
+.gif5_33 {
+
+margin:0px;
+  width: 30%;
+
+    height: 200px;
 }
 /* preloador */
 
