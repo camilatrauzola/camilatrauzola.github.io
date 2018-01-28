@@ -204,6 +204,7 @@ a:hover { color: white; text-decoration: none;}
   height: auto;
 }
 .gif4_1 img {
+  width: 100%;
   margin-bottom:-50px;
 
 }
